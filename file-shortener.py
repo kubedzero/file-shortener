@@ -69,6 +69,6 @@ for dirpath, dirs, files in os.walk(inputDirectory, topdown=False):
             # perform the update to the file
             os.rename(dirpath, dirpathWithoutClosestDir)
 
-print("Directories scanned", dirCounter, "and directories renamed:", dirEditCounter)
-print("Files scanned", fileCounter, "and files renamed:", fileEditCounter)
-print("Longest directory was", longestDirLength, "and longest file (with extension) was", longestFileLength)
+print("Directories scanned:", dirCounter, ", directories renamed:", dirEditCounter)
+print("Files scanned:", fileCounter, ", files renamed:", fileEditCounter)
+print("Longest directory name:", longestDirLength, ", longest filename while considering extension:", longestFileLength)
